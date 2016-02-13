@@ -2,7 +2,7 @@ apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'eclipse'
 
-group = 'llh.javaBasicTraining'
+group = 'meerkats.javaBasicTraining'
 version = '0.1'
 
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
