@@ -5,4 +5,9 @@ public class BasicClass {
     {
         System.out.println("hello,world");
     }
+    
+    public String sayHi(String text)
+    {
+        return text;
+    }
 }
