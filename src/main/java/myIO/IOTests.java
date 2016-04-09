@@ -16,7 +16,7 @@ public class IOTests {
         Engine engine = new Engine("EA211", "Strite", 1498, 4);
         CarBean car = new CarBean("Geely", "承载式车身", 1.3, engine);
 
-        String filePath = "carObj.txt";
+        String filePath = "C:\\Users\\Keercat\\Documents\\apache-tomcat\\webapps\\carObj.txt";
         int byteSize = 1024;
         File file = new File(filePath);
 
