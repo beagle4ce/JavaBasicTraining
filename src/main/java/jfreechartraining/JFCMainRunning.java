@@ -1,14 +1,20 @@
 package jfreechartraining;
 
+import java.awt.BasicStroke;
 import java.awt.Color;
 
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartFrame;
 import org.jfree.chart.JFreeChart;
+import org.jfree.chart.axis.CategoryAxis;
+import org.jfree.chart.labels.ItemLabelAnchor;
+import org.jfree.chart.labels.ItemLabelPosition;
+import org.jfree.chart.labels.StandardCategoryItemLabelGenerator;
 import org.jfree.chart.plot.CategoryPlot;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.chart.renderer.category.LineAndShapeRenderer;
 import org.jfree.data.category.DefaultCategoryDataset;
+import org.jfree.ui.TextAnchor;
 
 public class JFCMainRunning {
 
@@ -28,13 +34,24 @@ public class JFCMainRunning {
         
         CategoryPlot categoryPlot = jFreeChart.getCategoryPlot();
         categoryPlot.setBackgroundPaint(Color.white);
+        categoryPlot.setRangeGridlinesVisible(false);
         categoryPlot.setRangeGridlinePaint(Color.blue);
         
+        CategoryAxis categoryAxis = categoryPlot.getDomainAxis();
+        categoryAxis.setAxisLineStroke(new BasicStroke(6.0f));//设置轴的粗细
+        
         LineAndShapeRenderer lineAndShapeRenderer = (LineAndShapeRenderer)categoryPlot.getRenderer();
-        lineAndShapeRenderer.setBaseShapesVisible(true);
+        lineAndShapeRenderer.setBaseShapesVisible(true);// 设置节点是否显示
+        
         lineAndShapeRenderer.setDrawOutlines(true);
         lineAndShapeRenderer.setUseFillPaint(true);
         lineAndShapeRenderer.setBaseItemLabelsVisible(true);
+        lineAndShapeRenderer.setStroke(new BasicStroke(6.0f));// 设置折线的粗细
+        lineAndShapeRenderer.setBaseItemLabelsVisible(true);
+        lineAndShapeRenderer.setBasePositiveItemLabelPosition(
+                new ItemLabelPosition(ItemLabelAnchor.OUTSIDE12,TextAnchor.BASELINE_CENTER));
+        lineAndShapeRenderer.setBaseItemLabelGenerator(new StandardCategoryItemLabelGenerator());
+        
         
         ChartFrame chartFrame = new ChartFrame("标题", jFreeChart,true);
         chartFrame.pack();
