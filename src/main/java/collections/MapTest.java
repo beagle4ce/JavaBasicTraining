@@ -10,8 +10,9 @@ public class MapTest {
     public static void main(String[] args) {
         Map<Integer, String> cHashMap = new ConcurrentHashMap<Integer, String>();
         Map<Integer, String> lHashMap = new LinkedHashMap<Integer, String>();
-        Map<Integer, String> treeMap = new TreeMap<Integer, String>();
-        
+        Map<Integer, String> treeMap = null;
+        treeMap = new TreeMap<Integer, String>();
+
         cHashMap.put(5, "o");
         cHashMap.put(1, "h");
         cHashMap.put(2, "e");
