@@ -2,6 +2,7 @@
 .settings
 .classpath
 .gitignore
+.idea
 .project
 /bin/
 /build/

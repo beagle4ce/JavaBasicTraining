@@ -16,7 +16,7 @@ public class ScatterAndGather {
         String windowsDesktopPath = "C:/Users/Keercat/Desktop/";
         String filePath = windowsDesktopPath+"01test.txt";
         String wirteFilePath = windowsDesktopPath+"02test.txt";
-        
+
         CharBuffer charBuffer = CharBuffer.allocate(BufferAllocate);
         ByteBuffer byteBufferA = ByteBuffer.allocate(BufferAllocate);
         ByteBuffer byteBufferB = ByteBuffer.allocate(BufferAllocate);
