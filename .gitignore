@@ -1,6 +1,45 @@
-.gradle
-.settings
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+### STS ###
+.apt_generated
 .classpath
-.gitignore
+.factorypath
 .project
-/bin/
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.*/
+bin/
+logs/
+page/
+storage/
+target/
+record/
+tmp/
+*.ipr
+*.iml
+*.iws
+*.zip
+*.tar
+*.log
+*.gz
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+### VS Code ###
+.vscode/
+
+### MacOS ###
+.DS_Store
