@@ -1,5 +1,6 @@
 package me.beagle4ce.training.mybatis_plus_training.services;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import me.beagle4ce.training.mybatis_plus_training.mappers.SchoolMapper;
 import me.beagle4ce.training.mybatis_plus_training.model.SchoolModel;
 import me.beagle4ce.training.mybatis_plus_training.model.enums.Valid;
@@ -29,5 +30,10 @@ public class SchooleService {
 
     public void delTest() {
         schoolMapper.deleteById("ac5219a5b52da60a3a51d0eda4148348");
+    }
+
+    public void pageTest() {
+        IPage<SchoolModel> iPage = schoolMapper.selectPage();
+
     }
 }

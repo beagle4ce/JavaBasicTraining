@@ -10,12 +10,12 @@
 	</parent>
 	<groupId>me.beagle4ce.training</groupId>
 	<artifactId>MyBatisPlusTraining</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>MyBatisPlusTraining</name>
 	<description>It's mybatis plus training, for learn how to use it.</description>
 
 	<properties>
-		<java.version>11</java.version>
+		<java.version>1.8</java.version>
 	</properties>
 
 	<dependencies>
