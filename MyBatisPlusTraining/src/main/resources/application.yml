@@ -3,8 +3,8 @@ spring:
     hikari:
       username: root
       password: 123123
-    #url: jdbc:mysql://192.168.44.200:3306/school?useSSL=false&characterEncoding=utf-8
-    url: jdbc:mysql://192.168.2.185:3333/school?useSSL=false&characterEncoding=utf-8
+    url: jdbc:mysql://192.168.44.200:3306/school?useSSL=false&characterEncoding=utf-8
+#    url: jdbc:mysql://192.168.2.185:3333/school?useSSL=false&characterEncoding=utf-8
 
 mybatis-plus:
   configuration:

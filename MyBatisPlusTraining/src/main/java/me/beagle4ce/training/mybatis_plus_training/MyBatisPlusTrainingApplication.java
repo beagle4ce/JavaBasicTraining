@@ -11,8 +11,7 @@ public class MyBatisPlusTrainingApplication {
 	public static void main(String[] args) {
 		ApplicationContext apx = SpringApplication.run(MyBatisPlusTrainingApplication.class, args);
 		SchooleService schooleService = apx.getBean(SchooleService.class);
-//		schooleService.saveTest();
-		schooleService.delTest();
+		schooleService.testPage();
 	}
 
 }
