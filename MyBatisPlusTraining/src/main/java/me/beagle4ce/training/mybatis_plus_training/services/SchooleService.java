@@ -33,7 +33,7 @@ public class SchooleService {
     }
 
     public void pageTest() {
-        IPage<SchoolModel> iPage = schoolMapper.selectPage();
+//        IPage<SchoolModel> iPage = schoolMapper.selectPage();
 
     }
 }
