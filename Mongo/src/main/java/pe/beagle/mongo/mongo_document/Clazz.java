@@ -12,10 +12,10 @@ import org.springframework.data.mongodb.core.mapping.Field;
 @SuperBuilder(toBuilder = true)
 @EqualsAndHashCode(callSuper = true)
 @ToString(callSuper = true)
-@Document(value = "student")
-public class Student extends BaseMongoDoc {
+@Document(value = "clazz")
+public class Clazz extends BaseMongoDoc {
 
     @Indexed
-    @Field(value = "s_name")
+    @Field(value = "c_name")
     private String name;
 }
