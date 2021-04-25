@@ -1,6 +1,0 @@
-system:
-  micro-name: Strategic-decision-system
-  locale: zh
-  mysql:
-    url: jdbc:mysql://192.168.44.200:3306/school?characterEncoding=utf8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8
-    password: 123123

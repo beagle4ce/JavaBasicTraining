@@ -1,5 +1,0 @@
-system:
-  micro-name: Strategic-decision-system
-  locale: zh
-  mongo:
-    uri: mongodb://192.168.2.185:9999/mongotraining
