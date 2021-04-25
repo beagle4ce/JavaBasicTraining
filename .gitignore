@@ -15,6 +15,7 @@ target/
 
 ### IntelliJ IDEA ###
 .*/
+/.*/
 bin/
 logs/
 page/
@@ -22,9 +23,10 @@ storage/
 target/
 record/
 tmp/
-*.ipr
-*.iml
+.idea/
 *.iws
+*.iml
+*.ipr
 *.zip
 *.tar
 *.log
@@ -43,3 +45,4 @@ build/
 
 ### MacOS ###
 .DS_Store
+
