@@ -3,6 +3,13 @@
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.4.5</version>
+	</parent>
+
 	<groupId>io.github.beagle4ce</groupId>
 	<artifactId>javabasictraining</artifactId>
 	<version>0.0.1</version>
@@ -11,7 +18,12 @@
 	<description>javabasictraining</description>
 
 	<modules>
+		<module>designPatterns</module>
+		<module>mongodb</module>
+		<module>mybatisPlus</module>
 		<module>javase</module>
+		<module>redis</module>
+		<module>springBoot</module>
 	</modules>
 
 	<properties>
