@@ -1,7 +1,5 @@
 package io.github.beagle4ce.javase.thread_test.demo;
 
-import java.util.concurrent.locks.ReentrantLock;
-
 /**
  * SynchronizeTest
  *
@@ -29,7 +27,6 @@ public class SynchronizeStaticTest {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            
         }
     }
 }

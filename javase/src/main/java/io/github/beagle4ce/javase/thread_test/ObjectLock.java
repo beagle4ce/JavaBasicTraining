@@ -2,6 +2,9 @@ package io.github.beagle4ce.javase.thread_test;
 
 import io.github.beagle4ce.javase.thread_test.demo.SynchronizeTest;
 
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
 /**
  * ObjectLock
  *
@@ -29,6 +32,6 @@ public class ObjectLock {
             s1.setSleepTime(1000);
             s1.showObjLock();
         }).start();
-        
+        ConcurrentHashMap<String, String> map = new ConcurrentHashMap<>();
     }
 }
