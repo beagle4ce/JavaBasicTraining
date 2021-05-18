@@ -2,7 +2,6 @@ package io.github.beagle4ce.springBoot.dto;
 
 import lombok.*;
 import lombok.experimental.SuperBuilder;
-import org.springframework.context.annotation.Bean;
 
 /**
  * Employee
