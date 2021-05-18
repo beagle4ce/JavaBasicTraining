@@ -1,7 +1,5 @@
 package io.github.beagle4ce.javase.transfer_test;
 
-import javafx.util.Builder;
-
 /**
  * StringApiTest
  *
