@@ -6,6 +6,7 @@ package io.github.beagle4ce.javase.invoke;
  */
 public class Person {
     
+    public static String publicStaticObj = "this is public static object!";
     private static String privateStaticObj = "this is private static object!";
     private String name;
     private int age;
