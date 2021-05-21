@@ -8,8 +8,8 @@ public class RoadTest {
     
     public static void main(String[] args) {
 //        case1();
-//        case2();
-        case3();
+        case2();
+//        case3();
     }
     
     public static void case1() {
