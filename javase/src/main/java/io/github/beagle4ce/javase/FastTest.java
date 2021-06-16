@@ -10,6 +10,8 @@ package io.github.beagle4ce.javase;
 public class FastTest {
     
     public static void main(String[] args) {
-        System.out.println(0.0 == -0.0);
+        
+    
     }
+    
 }

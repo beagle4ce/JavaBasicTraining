@@ -9,6 +9,8 @@ import java.lang.reflect.Method;
  */
 public interface Human {
     
+    final static String a = "";
+    
     void setName(String name);
     
     void setAge(int age);

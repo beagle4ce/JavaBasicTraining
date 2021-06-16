@@ -20,11 +20,11 @@ public class InvokeAnnotation {
         int result = ia.getClass().getDeclaredMethod("test1")
                 .getDeclaredAnnotation(CustomMethodAnnotation.class).number();
         // 所以spring在执行的时候会规定扫描包的路径，否则做全文件扫描太慢了，只能逐一查看类和方法上的注解。
-        
-        
-        int result2 = ia.getClass().getDeclaredAnnotation(CustomMethodAnnotation.class).number();
+    
         // 这里会报错，类上面没有这个注解，是拿不到数据的，会报NPE
+        // int result2 = ia.getClass().getDeclaredAnnotation(CustomMethodAnnotation.class).number();
+        
         System.out.println(result);
-        System.out.println(result2);
+        // System.out.println(result2);
     }
 }
