@@ -11,24 +11,31 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.annotation.Resource;
 
 /**
- * TestController
+ * MultiServiceImplController
  *
  * @author LLH
- * @since 四月/26/2021 星期一
+ * @since 六月/16/2021 星期三
  */
 @Slf4j
 @Controller
 @RequiredArgsConstructor
-@RequestMapping(value = "/test")
-public class TestController {
+@RequestMapping(value = "/multi/service")
+public class MultiServiceImplController {
     
     @Resource(name = "bStrategyService")
     private StrategyService strategyService;
     
+    /*@Resource(name = "bStrategyService")
+    public void setStrategyService(StrategyService strategyService) {
+        this.strategyService = strategyService;
+    }*/
+    
     @GetMapping(value = "/**")
     @ResponseBody
     public String test() {
+        strategyService.executeStrategy();
         return "ok";
     }
+    
     
 }

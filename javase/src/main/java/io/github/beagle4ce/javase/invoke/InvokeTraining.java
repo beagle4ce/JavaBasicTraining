@@ -25,8 +25,12 @@ public class InvokeTraining {
         
         Field publicStaticObjField = personClass.getDeclaredField("publicStaticObj"); // 设置需要被获取的公有对象名称
         String publicStaticObj = (String) publicStaticObjField.get(person); // 获取person实例化对象内的publicStaticObj公有成员对象的值
-                                                                           // 私有对象无法反射出来
         System.out.println("\n" + publicStaticObj + "\n"); // 展示publicStaticObj对象的值
+        
+        Field privateStaticObjField = personClass.getDeclaredField("privateStaticObj");
+        privateStaticObjField.setAccessible(true); // 为了获取私有(静态/非静态)成员对象,需要预先设置可访问性
+        String privateStaticObj = (String) privateStaticObjField.get(person);
+        System.out.println("\n" + privateStaticObj + "\n"); // 展示privateStaticObj对象的值
         
         Method getPrivateStaticObjMethod = personClass.getDeclaredMethod("getPrivateStaticObj"); // 获取类的私有静态方法
         getPrivateStaticObjMethod.setAccessible(true); // 若遇到私有修饰的时候将这个方法设置为可访问的
