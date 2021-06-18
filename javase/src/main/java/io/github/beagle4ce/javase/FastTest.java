@@ -1,9 +1,5 @@
 package io.github.beagle4ce.javase;
 
-import java.io.*;
-import java.nio.charset.StandardCharsets;
-import java.util.zip.GZIPInputStream;
-
 /**
  * FastTest
  *
@@ -16,6 +12,6 @@ public class FastTest {
     
     public static void main(String[] args) {
         System.out.println(3 % 2);
-        
     }
+    
 }
