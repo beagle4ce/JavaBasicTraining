@@ -5,6 +5,7 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 import javax.servlet.Servlet;
 
@@ -15,6 +16,7 @@ import javax.servlet.Servlet;
  * @since 四月/26/2021 星期一
  */
 @Slf4j
+@EnableAspectJAutoProxy
 @SpringBootApplication
 public class ApplicationStart implements ApplicationRunner {
     
