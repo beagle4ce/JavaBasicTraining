@@ -36,6 +36,7 @@ public class TestController {
     @GetMapping(value = "/aspect")
     @ResponseBody
     public String aspectTest(@RequestParam("input")String inputStr) {
+        log.info("=== " + inputStr);
         return inputStr;
     }
     

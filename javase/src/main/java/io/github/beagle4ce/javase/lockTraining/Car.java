@@ -1,9 +1,5 @@
 package io.github.beagle4ce.javase.lockTraining;
 
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
-
 /**
  * @author: Beagle
  * @since: 五月/19/2021 星期三

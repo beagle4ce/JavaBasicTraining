@@ -1,8 +1,5 @@
 package io.github.beagle4ce.javase.invoke.proxy;
 
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Method;
-
 /**
  * @author: Beagle
  * @since: 五月/18/2021 星期二

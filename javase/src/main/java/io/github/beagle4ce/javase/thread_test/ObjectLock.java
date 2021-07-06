@@ -2,7 +2,6 @@ package io.github.beagle4ce.javase.thread_test;
 
 import io.github.beagle4ce.javase.thread_test.demo.SynchronizeTest;
 
-import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
